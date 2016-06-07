@@ -315,8 +315,7 @@ n dida<!DOCTYPE html>
 
                             <li class="has_sub">
                                 <a href="{{ url('greeting') }}" class="waves-effect"><i class="ti-share"></i><span>Kirim Kartu Ucapan </span></a>
-
-                            </li>`
+                             </li>
 
 
 

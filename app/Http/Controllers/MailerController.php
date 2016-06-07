@@ -26,5 +26,5 @@ class MailerController extends Controller
       });
 
     return redirect('greeting');
-  }
+   }
 }
