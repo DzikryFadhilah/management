@@ -1,0 +1,17 @@
++--------+----------+------------------+-------------+----------------------------------------------------+---------------+
+| Domain | Method   | URI              | Name        | Action                                             | Middleware    |
++--------+----------+------------------+-------------+----------------------------------------------------+---------------+
+|        | GET|HEAD | /                |             | Closure                                            | web           |
+|        | POST     | data_penyewa/add | add_data    | App\Http\Controllers\DataController@add_data       | web           |
+|        | GET|HEAD | delete_data/{id} | delete_data | App\Http\Controllers\DataController@delete_data    | web           |
+|        | GET|HEAD | edit_data/{id}   | edit_data   | App\Http\Controllers\DataController@edit_data      | web           |
+|        | GET|HEAD | input_akun/add   | input_akun  | App\Http\Controllers\DataController@input_akun     | web           |
+|        | GET|HEAD | input_data       | view_input  | App\Http\Controllers\DataController@view_input     | web           |
+|        | GET|HEAD | lihat_akun       | lihat_akun  | App\Http\Controllers\DataController@lihat_akun     | web           |
+|        | POST     | login            |             | App\Http\Controllers\Auth\AuthController@postLogin | web,web,guest |
+|        | GET|HEAD | login            |             | App\Http\Controllers\DataController@view_login     | web           |
+|        | GET|HEAD | logout           |             | App\Http\Controllers\Auth\AuthController@getLogout | web,web,guest |
+|        | POST     | register         |             | App\Http\Controllers\Auth\AuthController@register  | web,web,guest |
+|        | POST     | update_data      | update_data | App\Http\Controllers\DataController@update_data    | web           |
+|        | GET|HEAD | view_data        | view_data   | App\Http\Controllers\DataController@view_data      | web           |
++--------+----------+------------------+-------------+----------------------------------------------------+---------------+
